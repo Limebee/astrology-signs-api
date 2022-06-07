@@ -107,6 +107,6 @@ app.get('/api/:sign',(req,res)=>{
 })
 
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`This server is now running on port ${PORT}!`)
 })
